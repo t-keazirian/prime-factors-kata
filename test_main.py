@@ -39,5 +39,13 @@ class PrimeFactorsTestClass(unittest.TestCase):
         factors = PrimeFactors().factors_of
         self.assertEqual(factors(9), [3, 3])
 
+    def test_10_contains_5_2(self):
+        factors = PrimeFactors().factors_of
+        self.assertEqual(factors(10), [2, 5])
+
+    def test_all_numbers(self):
+        factors = PrimeFactors().factors_of
+        self.assertEqual(factors(2 * 3 * 5 * 7 * 11 * 13), [2,  3,  5,  7, 11, 13])
+
 
 
